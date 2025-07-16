@@ -1,0 +1,14 @@
+{
+  "name": "hanour-design-landing-page",
+  "version": "1.0.0",
+  "description": "HANOUR design collective landing page",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'No build step required for static site'",
+    "start": "echo 'Static site ready'"
+  },
+  "keywords": ["design", "landing-page", "static"],
+  "author": "HANOUR Design",
+  "license": "MIT",
+  "type": "module"
+} 
