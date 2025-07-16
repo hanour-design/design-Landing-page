@@ -1,0 +1,216 @@
+/* ==========================================================================
+   Animations & Effects
+   ========================================================================== */
+
+/* Logo animation overlay */
+.section-logo-anim {
+  position: fixed;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  font-size: 8vw;
+  font-weight: var(--font-weight-bold);
+  color: rgba(255,255,255,0.05);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  line-height: 1.1;
+  font-family: var(--font-family-display);
+}
+
+.section-logo-anim .line {
+  display: block;
+  white-space: nowrap;
+}
+
+.section-logo-anim.show {
+  animation: slideLogo 12s linear infinite;
+  opacity: 1;
+}
+
+/* Logo slide animation with glow effect */
+@keyframes slideLogo {
+  0%   { 
+    left: 100%; 
+    color: rgba(255,255,255,0.05); 
+    text-shadow: none; 
+  }
+  45%  { 
+    color: rgba(255,255,255,0.05); 
+    text-shadow: none; 
+  }
+  48%  { 
+    color: var(--color-accent); 
+    text-shadow: 0 0 2px rgba(176,9,20,0.15), 0 0 4px rgba(176,9,20,0.15); 
+  }
+  49%  { 
+    color: var(--color-accent); 
+    text-shadow: 0 0 6px rgba(176,9,20,0.25), 0 0 10px rgba(176,9,20,0.25); 
+  }
+  50%  { 
+    color: var(--color-accent); 
+    text-shadow: 0 0 12px rgba(176,9,20,0.4), 0 0 24px rgba(176,9,20,0.35); 
+  }
+  51%  { 
+    color: var(--color-accent); 
+    text-shadow: 0 0 6px rgba(176,9,20,0.25), 0 0 10px rgba(176,9,20,0.25); 
+  }
+  52%  { 
+    color: var(--color-accent); 
+    text-shadow: 0 0 2px rgba(176,9,20,0.15), 0 0 4px rgba(176,9,20,0.15); 
+  }
+  55%  { 
+    color: rgba(255,255,255,0.05); 
+    text-shadow: none; 
+  }
+  100% { 
+    left: -100%; 
+    color: rgba(255,255,255,0.05); 
+    text-shadow: none; 
+  }
+}
+
+/* Logo text styling */
+.section-logo-anim .en {
+  letter-spacing: 0.05em;
+}
+
+.section-logo-anim .jp {
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+}
+
+/* Enhanced fade-in animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Staggered animation delays for grouped elements */
+.fade-in:nth-child(1) { transition-delay: 0.1s; }
+.fade-in:nth-child(2) { transition-delay: 0.2s; }
+.fade-in:nth-child(3) { transition-delay: 0.3s; }
+.fade-in:nth-child(4) { transition-delay: 0.4s; }
+.fade-in:nth-child(5) { transition-delay: 0.5s; }
+
+/* Pulse animation for scroll indicator */
+@keyframes pulse {
+  0%, 100% { 
+    opacity: 0.5; 
+    transform: translateX(-50%) rotate(180deg) scale(1); 
+  }
+  50% { 
+    opacity: 1; 
+    transform: translateX(-50%) rotate(180deg) scale(1.05); 
+  }
+}
+
+/* Hover animations for interactive elements */
+.service-card {
+  transition: 
+    transform var(--transition-normal), 
+    border-color var(--transition-normal),
+    box-shadow var(--transition-normal);
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-border-hover);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Button hover animations */
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-normal);
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+  transition: left var(--transition-slow);
+}
+
+.btn:hover::before {
+  left: 100%;
+}
+
+/* Navigation link hover effects */
+.header__nav-link {
+  position: relative;
+}
+
+.header__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--color-text-primary);
+  transition: width var(--transition-normal);
+}
+
+.header__nav-link:hover::after {
+  width: 100%;
+}
+
+/* Form focus animations */
+.form-group__input,
+.form-group__textarea {
+  position: relative;
+}
+
+.form-group__input:focus,
+.form-group__textarea:focus {
+  transform: translateY(-2px);
+} 
+
+/* --------------------------------------------
+   Directional slide-in animation helpers
+   -------------------------------------------- */
+
+.enter-right {
+  opacity: 0;
+  transform: translateX(80px);
+  transition: all 1.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.enter-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.enter-top {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all 1.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.enter-top.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.enter-bottom {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 1.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.enter-bottom.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 

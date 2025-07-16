@@ -1,0 +1,72 @@
+/* ==========================================================================
+   Configuration & Design Tokens
+   ========================================================================== */
+
+/* Fonts */
+@import url('https://use.typekit.net/gfl2xib.css');
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+:root {
+  /* Colors */
+  --color-primary: #090101;
+  --color-secondary: #111111;
+  --color-accent: #B00914;
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #cccccc;
+  --color-text-muted: #888888;
+  --color-text-subtle: #555555;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-border-hover: rgba(255, 255, 255, 0.2);
+  --color-border-active: rgba(255, 255, 255, 0.5);
+
+  /* Typography */
+  --font-family-primary: "henderson-sans-basic", -apple-system, BlinkMacSystemFont, "SF Pro Display", "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-display: "henderson-sans-basic", -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif;
+  --font-family-text: "henderson-sans-basic", -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
+  --font-family-brush: "Yuji Syuku", "Yu Mincho", serif;
+
+  /* Font Weights */
+  --font-weight-light: 200;
+  --font-weight-normal: 300;
+  --font-weight-medium: 400;
+  --font-weight-semibold: 500;
+  --font-weight-bold: 600;
+
+  /* Spacing */
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 1.5rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 3rem;
+  --spacing-2xl: 4rem;
+  --spacing-3xl: 6rem;
+  --spacing-4xl: 8rem;
+
+  /* Layout */
+  --max-width-container: 1400px;
+  --border-radius: 0;
+  --header-height: 90px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+
+  /* Shadows */
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.2);
+  --shadow-lg: 0 20px 40px rgba(0, 0, 0, 0.5);
+
+  /* Z-index */
+  --z-background: 0;
+  --z-content: 1;
+  --z-overlay: 10;
+  --z-header: 1000;
+
+  /* Breakpoints (for reference) */
+  --breakpoint-xs: 320px;
+  --breakpoint-sm: 480px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1200px;
+} 

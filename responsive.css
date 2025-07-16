@@ -1,0 +1,399 @@
+/* ==========================================================================
+   Responsive Design
+   ========================================================================== */
+
+/* Large screens (1200px and down) */
+@media (max-width: 1200px) {
+
+  .creative-content,
+  .contact__content {
+    gap: var(--spacing-2xl);
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);  /* 4つを2x2 */
+    gap: var(--spacing-xl);
+  }
+
+  .section {
+    padding: var(--spacing-3xl) var(--spacing-lg);
+  }
+}
+
+/* Tablets (1024px and down) */
+@media (max-width: 1024px) {
+
+  .creative-content,
+  .contact__content {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-2xl);
+  }
+
+  .services__grid {
+    grid-template-columns: repeat(2, 1fr);  /* タブレットでも2列維持 */
+    gap: var(--spacing-xl);
+  }
+
+  .hero__logo {
+    max-height: 20rem;
+  }
+
+  .hero__tagline {
+    font-size: 1.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+  }
+
+  .section__title {
+    font-size: 2.5rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .creative-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Small tablets and large phones (768px and down) */
+@media (max-width: 768px) {
+  .section__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--spacing-md);
+  }
+
+  .puzzle-slider {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .puzzle-slider__handle {
+    width: 120px;
+    font-size: 0.8rem;
+  }
+
+  .puzzle-slider__instruction {
+    font-size: 0.65rem;
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;  /* スマホでは1列 */
+    gap: var(--spacing-lg);
+  }
+
+  .header__nav-links {
+    gap: var(--spacing-md);
+  }
+
+  .header__nav {
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .header__logo {
+    font-size: 1.3rem;
+  }
+
+  .hero {
+    padding: 0 var(--spacing-sm);
+  }
+
+  .hero__logo {
+    max-height: 16rem;
+  }
+
+  .hero__tagline {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .section {
+    padding: var(--spacing-2xl) var(--spacing-md);
+  }
+
+  .section__title {
+    font-size: 2rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .creative-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .creative-text p {
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .feature-item {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .feature-item h3 {
+    font-size: 1.1rem;
+  }
+
+  .feature-item p {
+    font-size: 0.9rem;
+  }
+
+  .service-card {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .service-card__title {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .service-card__description {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-md);
+  }
+
+  .service-card__feature {
+    font-size: 0.8rem;
+  }
+
+  .contact__info-title {
+    font-size: 1.3rem;
+  }
+
+  .contact__info-text {
+    font-size: 1rem;
+  }
+
+  .form-group__label {
+    font-size: 0.8rem;
+  }
+
+  .form-group__input,
+  .form-group__textarea {
+    padding: var(--spacing-sm) 0;
+    font-size: 0.9rem;
+  }
+
+  .btn {
+    padding: var(--spacing-sm) var(--spacing-lg);
+    font-size: 0.9rem;
+  }
+
+  .scroll-indicator {
+    bottom: var(--spacing-lg);
+    font-size: 0.7rem;
+  }
+}
+
+/* Mobile phones (480px and down) */
+@media (max-width: 480px) {
+  .header__nav {
+    padding: var(--spacing-sm);
+  }
+
+  .header__logo {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    padding: 0 var(--spacing-xs);
+  }
+
+  .hero__logo {
+    max-height: 12rem;
+  }
+
+  .hero__tagline {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-xs);
+  }
+
+  .hero__subtitle {
+    font-size: 0.8rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .section {
+    padding: var(--spacing-xl) var(--spacing-sm);
+  }
+
+  .section__title {
+    font-size: 1.8rem;
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .creative-text {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+
+  .creative-text p {
+    margin-bottom: var(--spacing-md);
+  }
+
+  .feature-item {
+    padding: var(--spacing-md) 0;
+  }
+
+  .feature-item h3 {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .feature-item p {
+    font-size: 0.85rem;
+  }
+
+  .service-card {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .service-card__title {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .service-card__description {
+    font-size: 0.85rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .service-card__feature {
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+  }
+
+  .contact__content {
+    gap: var(--spacing-lg);
+  }
+
+  .contact__info-title {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact__info-text {
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-sm);
+  }
+
+  .contact__form {
+    gap: var(--spacing-md);
+  }
+
+  .form-group {
+    gap: 0.6rem;
+  }
+
+  .form-group__label {
+    font-size: 0.75rem;
+  }
+
+  .form-group__input,
+  .form-group__textarea {
+    padding: 0.8rem 0;
+    font-size: 0.85rem;
+  }
+
+  .form-group__textarea {
+    min-height: 100px;
+  }
+
+  .btn {
+    padding: 0.8rem var(--spacing-md);
+    font-size: 0.8rem;
+  }
+
+  .footer {
+    padding: var(--spacing-lg) var(--spacing-sm);
+  }
+
+  .footer__text {
+    font-size: 0.8rem;
+  }
+
+  .scroll-indicator {
+    bottom: var(--spacing-md);
+    font-size: 0.6rem;
+  }
+}
+
+/* Extra small devices (320px and down) */
+@media (max-width: 320px) {
+  .hero__logo {
+    max-height: 6rem;
+  }
+
+  .hero__tagline {
+    font-size: 0.8rem;
+  }
+
+  .hero__subtitle {
+    font-size: 0.7rem;
+  }
+
+  .section__title {
+    font-size: 1.6rem;
+  }
+
+  .creative-text {
+    font-size: 0.8rem;
+  }
+
+  .service-card {
+    padding: var(--spacing-sm);
+  }
+
+  .section {
+    padding: var(--spacing-lg) 0.8rem;
+  }
+}
+
+/* Landscape orientation optimizations */
+@media (orientation: landscape) and (max-height: 500px) {
+  .hero {
+    height: auto;
+    min-height: 100vh;
+    padding: var(--spacing-2xl) var(--spacing-lg);
+  }
+
+  .hero__logo {
+    max-height: 8rem;
+  }
+
+  .scroll-indicator {
+    display: none;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+  .hero__grid-bg {
+    background-size: 25px 25px;
+  }
+}
+
+/* Print styles */
+@media print {
+
+  .header,
+  .scroll-indicator,
+  .section-logo-anim {
+    display: none;
+  }
+
+  .hero {
+    height: auto;
+    page-break-after: always;
+  }
+
+  .section {
+    page-break-inside: avoid;
+  }
+}
