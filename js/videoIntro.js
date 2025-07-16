@@ -69,8 +69,8 @@ export class VideoIntroController {
     const updateVideoSource = async () => {
       const isMobile = window.innerWidth <= 767;
       const videoSrc = isMobile 
-        ? 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/mobile.mov' 
-        : 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/desktop.mov';
+        ? 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/縦長.mov' 
+        : 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/横長.mov';
       
       console.log(`Setting video source: ${videoSrc} (${isMobile ? 'mobile' : 'desktop'})`);
       
