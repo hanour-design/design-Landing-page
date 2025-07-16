@@ -11,12 +11,11 @@ export class VideoIntroController {
 
   init() {
     // If intro has been played in this session, remove overlay and skip
-    // Temporarily disabled for testing - uncomment for production
-    // if (sessionStorage.getItem('introPlayed') === 'true') {
-    //   this.videoIntro?.remove();
-    //   document.body.classList.remove('video-playing');
-    //   return;
-    // }
+    if (sessionStorage.getItem('introPlayed') === 'true') {
+      this.videoIntro?.remove();
+      document.body.classList.remove('video-playing');
+      return;
+    }
 
     if (!this.videoIntro || !this.introVideo) {
       console.log('Video intro elements not found');
