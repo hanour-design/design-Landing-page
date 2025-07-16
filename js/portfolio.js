@@ -2,12 +2,12 @@
 const works = [
   {
     type: 'image',
-    src: 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/Comming Soon.png',
+    src: 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/Comming%20Soon.png',
     alt: 'HORYLABEL パッケージデザイン'
   },
   {
     type: 'image',
-    src: 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/名称未設定のデザイン (6).png',
+    src: 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/名称未設定のデザイン%20(6).png',
     alt: '韓国人向けレストラン予約 IRUTOMO'
   },
   {
