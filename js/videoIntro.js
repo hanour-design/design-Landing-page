@@ -41,7 +41,7 @@ export class VideoIntroController {
   setupResponsiveVideo() {
     const updateVideoSource = () => {
       const isMobile = window.innerWidth <= 767;
-      const videoSrc = isMobile ? 'assets/videos/縦長.mov' : 'assets/videos/横長.mov';
+      const videoSrc = isMobile ? 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/縦長.mov' : 'https://cdn.jsdelivr.net/gh/hanour-design/design-Landing-page-assets@main/横長.mov';
       
       // Only change source if different
       if (this.introVideo.src !== videoSrc) {
