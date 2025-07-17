@@ -329,7 +329,8 @@
 
 .service-card__feature {
   font-size: 0.9rem;
-  color: var(--color-text-muted);
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-medium);
   margin-bottom: 0.8rem;
   position: relative;
   padding-left: var(--spacing-md);
